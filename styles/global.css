@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components{
+    .button{
+        @apply px-4 py-2 border rounded-full transition transform duration-100
+        cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100
+    }
+}
+
+.footer div p{
+    cursor: pointer;
+}
+.footer div p:hover{
+    text-decoration: underline;
+}
+i{
+    font-size: 1.4rem !important;
+    cursor:pointer
+}
+i:hover{
+    opacity: .7;
+}

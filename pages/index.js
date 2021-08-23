@@ -9,6 +9,8 @@ import unique from '../images/unique.jpg'
 import LargeCard from '../components/LargeCard';
 import Footer from '../components/Footer';
 
+
+
 const cardData = [{
   img: outdoor,
   title: 'Outdoor gateways'
@@ -20,7 +22,7 @@ const cardData = [{
   title: 'Entire Homes'
 }, {
   img: outdoor,
-  title: 'Outdoor gateways'
+  title: 'Outdoor gateway'
 },]
 
 
@@ -29,10 +31,14 @@ export default function Home({ exploreData }) {
   return (
     <div>
       <Head>
-        <title>airbnb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Airbnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & Experiences</title>
+        {/* <link rel="icon" href="./favicon.ico" /> */}
+        <link rel="icon" href="/icon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
 
+
+      {/* all complete just have to deploy */}
 
 
       <Header />
@@ -63,7 +69,7 @@ lg:grid-cols-3 xl:grid-cols-4">
          overflow-scroll scrollbar-hide">
             {
               cardData?.map(item => (
-                <MediumCard key={item.img}
+                <MediumCard key={item.title}
                   img={item.img} title={item.title}
 
                 />
